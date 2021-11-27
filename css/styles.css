@@ -180,13 +180,13 @@ a {
     margin-right: 10px;
 }
 
-/*Div class de las imagenes en "trabajos.html"*/
+
 .algunosTrabajos h2 {
     font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
     color: #240046;
     text-align: center;
 }
-
+/*Div class de las imagenes en "index.html"*/
 .imagenesDeTrabajos {
     margin: 0px 40px 0px 40px;
     display: grid;
@@ -197,14 +197,15 @@ a {
     'D  E  F'
     'G  H  I';
 }
-/* @media (min-width: 600px) {
+@media (max-width: 768px) {
     .imagenesDeTrabajos {
         grid-template-areas: 
-        "A  B  C"
-        "D  E  F"
-        "G  H  I";
+        "A  B"
+        "C  D"
+        "E  F"
+        "H  I";
     }
-} */
+}
 .imagenesDeTrabajos img:nth-child(1) { grid-area: A; }
 .imagenesDeTrabajos img:nth-child(2) { grid-area: B; }
 .imagenesDeTrabajos img:nth-child(3) { grid-area: C; }
