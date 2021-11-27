@@ -1,11 +1,11 @@
 /*Agregar una font dentro de la carpeta "fonts"*/
 @font-face {
     font-family: 'IntegralCF-BoldOblique';
-    src: url(./fonts/IntegralCF-BoldOblique.ttf);
+    src: url(/css/fonts/IntegralCF-BoldOblique.ttf);
 }
 @font-face {
     font-family: 'IntegralCF-Oblique';
-    src: url(./fonts/IntegralCF-RegularOblique.ttf);
+    src: url(/css/fonts/IntegralCF-RegularOblique.ttf);
 }
 
 
@@ -27,7 +27,7 @@ a {
 /* Class */
 /*Estilización de footer*/
 .footer {
-    font-family: 'IntegralCF-Oblique';
+    font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
     font-size: 15px;
     display: flex;
     justify-content: space-between;
@@ -87,7 +87,7 @@ a {
     margin: 0px;
 }
 .textoHeader h1 {
-    font-family: 'IntegralCF-BoldOblique', sans-serif;
+    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
     color: #240046;
     margin: 10px 0px;
     left: 10px;
