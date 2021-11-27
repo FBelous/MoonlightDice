@@ -1,0 +1,237 @@
+/*Agregar una font dentro de la carpeta "fonts"*/
+@font-face {
+    font-family: 'IntegralCF-BoldOblique';
+    src: url(/fonts/IntegralCF-BoldOblique.ttf);
+}
+@font-face {
+    font-family: 'IntegralCF-Oblique';
+    src: url(/fonts/IntegralCF-RegularOblique.ttf);
+}
+
+
+/*Generales del HTML*/
+/*Body, mas que nada el cambio de font*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEE4F4;
+    margin: 0px;
+}
+
+/*Color de los links*/
+a {
+    color: black;
+    text-decoration: black;
+}
+
+
+/* Class */
+/*Estilización de footer*/
+.footer {
+    font-family: 'IntegralCF-Oblique';
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #7251B5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.logoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.logoFooter img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    filter: invert(100%);
+}
+.contactoFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactoFooter img {
+    width: 35px;
+    height: 35px;
+    filter: invert(100%);
+}
+.contactoFooter p {
+    margin: 0px;
+    width: 45%;
+}
+
+/*El header de todas las paginas*/
+.header {
+    background-color: #7251B5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+.logoHeader  {
+    float: left;
+    margin: 0px;
+}
+.logoHeader img {
+    width: 100px;
+    height: 100px;
+    filter: invert(100%);
+}
+.textoHeader {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.textoHeader h1 {
+    font-family: 'IntegralCF-BoldOblique', sans-serif;
+    color: #240046;
+    margin: 10px 0px;
+    left: 10px;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #EEE4F4;
+}
+.textoHeader nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.textoHeader nav ul li {
+    padding: 0px;
+}
+.textoHeader nav ul li button {
+    width: auto;
+    cursor: pointer;
+    padding-right: 10px;
+    background-color: #7251B5;
+    /* border: transparent; */
+    font-size: 15px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Div class en el "index.html" de los productos a la venta*/
+.productos {
+    display: flex;
+}
+.productos div {
+    margin-right: 50px;
+}
+.productos input {
+    width: 100px;
+}
+.productos img {
+    width: 100px;
+    height: 100px;
+}
+
+/*Div class de los retratos en "nosotros.html"*/
+.retrato img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+/*Div class de la info en "nosotros.html"*/
+.nuestraInfo {
+    display: flex;
+}
+.nuestraInfo article {
+    /* padding: 6px; */
+    border: solid #7251B5 2px;
+    margin-right: 22px;
+    margin-left: 22px;
+    text-align: center;
+}
+.nuestraInfo article h3 {
+    border: solid #7251B5 10px;
+    background-color: #7251B5;
+    margin: 0px;
+}
+.nuestraInfo article p {
+    padding: 10px;
+}
+
+/*Div class del creador de personaje en "personaje.html*/
+.creadorPersonaje {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    margin-top: 200px;
+}
+.creadorPersonaje h2 {
+    font-size: 50px;
+}
+
+/*Div class del formulario de pedido en "producto.html"*/
+.infoConsulta {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+.form {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.formNombre {
+    margin-right: 10px;
+}
+
+/*Div class de las imagenes en "trabajos.html"*/
+.imagenesDeTrabajos {
+    margin: 0px 20px 0px 20px;
+    display: grid;
+    grid-gap: 7px;
+    justify-items: stretch;
+    grid-template-areas: 
+    'A  B  C'
+    'D  E  F'
+    'G  H  I';
+}
+/* @media (min-width: 600px) {
+    .imagenesDeTrabajos {
+        grid-template-areas: 
+        "A  B  C"
+        "D  E  F"
+        "G  H  I";
+    }
+} */
+.imagenesDeTrabajos img:nth-child(1) { grid-area: A; }
+.imagenesDeTrabajos img:nth-child(2) { grid-area: B; }
+.imagenesDeTrabajos img:nth-child(3) { grid-area: C; }
+.imagenesDeTrabajos img:nth-child(4) { grid-area: D; }
+.imagenesDeTrabajos img:nth-child(5) { grid-area: E; }
+.imagenesDeTrabajos img:nth-child(6) { grid-area: F; }
+.imagenesDeTrabajos img:nth-child(7) { grid-area: G; }
+.imagenesDeTrabajos img:nth-child(8) { grid-area: H; }
+.imagenesDeTrabajos img:nth-child(9) { grid-area: I; }
+.imagenesDeTrabajos img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* IDs */
+/*ID de "sobre nosotros" en pag "nosotros.html"*/
+#sobreNosotros {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+/* ID de "nuestra info" en pag "nosotros.html*/
+#nuestraInfo {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
