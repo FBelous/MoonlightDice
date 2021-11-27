@@ -1,11 +1,11 @@
 /*Agregar una font dentro de la carpeta "fonts"*/
 @font-face {
     font-family: 'IntegralCF-BoldOblique';
-    src: url(/fonts/IntegralCF-BoldOblique.ttf);
+    src: url(./fonts/IntegralCF-BoldOblique.ttf);
 }
 @font-face {
     font-family: 'IntegralCF-Oblique';
-    src: url(/fonts/IntegralCF-RegularOblique.ttf);
+    src: url(./fonts/IntegralCF-RegularOblique.ttf);
 }
 
 
