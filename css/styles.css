@@ -32,7 +32,6 @@ a {
     font-size: 15px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     background-color: #7251B5;
     position: fixed;
     bottom: 0;
@@ -72,7 +71,7 @@ a {
 /* Query del footer para celular */
 @media (max-width: 480px) {
     .footer {
-        font-size: 9px;
+        font-size: 0.8rem;
     }
 
     .logoFooter img {
@@ -127,7 +126,7 @@ a {
     display: flex;
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
+    padding-bottom: 1rem;
 }
 
 .textoHeader nav ul li {
@@ -155,7 +154,7 @@ a {
     }
 
     .textoHeader nav ul li button {
-        font-size: 8px;
+        font-size: 0.8rem;
     }
 }
 
@@ -163,6 +162,12 @@ a {
 
 /* PAGINA 'NOSOTOS.HTML' */
 /*Div class de los retratos en "nosotros.html"*/
+.retrato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
 .retrato img {
     display: inline-block;
     width: 150px;
@@ -176,13 +181,28 @@ a {
 }
 
 /*Div de "sobre nosotros" en pag "nosotros.html"*/
-.sobreNosotros {
+.sobreNosotros { /*
     margin: auto;
     text-align: center;
     width: 60%;
     padding: 10px;
     margin-bottom: 50px;
+*/
+    /* margin: auto; */
+    text-align: center;
+    /* padding: 10px; */
+    padding-bottom: 6rem;
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
 }
+
+#nos{
+    width: auto;
+}
+
+
 
 .nuestraInfo article {
     /* padding: 6px; */
@@ -204,14 +224,12 @@ a {
 
 
 
-
 /* PAGINA 'PERSONAJE.HTML */
 /*Div class del creador de personaje en "personaje.html*/
 .creadorPersonaje {
-    margin: auto;
+    
     text-align: center;
-    width: 50%;
-    margin-top: 200px;
+    padding-top: 3rem;
 }
 
 .creadorPersonaje h2 {
@@ -249,6 +267,7 @@ a {
 /*Div class de las imagenes en "index.html"*/
 .imagenesDeTrabajos {
     margin: 0px 40px 0px 40px;
+    margin-bottom: 6rem;
     display: grid;
     grid-gap: 7px;
     justify-items: stretch;
@@ -256,6 +275,28 @@ a {
         'A  B  C'
         'D  E  F'
         'G  H  I';
+}
+
+
+#impres3D{
+    display: flex;
+    flex-direction: column;
+}
+#disUnic{
+    display: flex;
+    flex-direction: column;
+}
+#alcanceCualquiera{
+    display: flex;
+    flex-direction: column;
+}
+
+#impres3D h3{
+    font-size: 1rem;
+}
+
+#impres3D p{
+    font-size: 0.8rem;
 }
 
 .imagenesDeTrabajos img:nth-child(1) {
@@ -300,6 +341,34 @@ a {
 }
 
 /* Query para la pagina 'INDEX.HTML' */
+
+@media screen and (max-width: 860px) {
+
+    .nuestraInfo{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 580px) {
+    
+.infoConsulta {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.nuestraInfo{
+    margin-bottom: 6rem;
+}
+
+.sobreNosotros{
+    padding-left: 2rem;
+}
+}
+
+
 @media (max-width: 480px) {
 
     .imagenesDeTrabajos {
@@ -314,4 +383,58 @@ a {
     .algunosTrabajos h2 {
         font-size: 1em;
     }
+
+    .sobreNosotros{
+        padding-left: 0.1rem;   
+        padding-right: 0.1rem;
+    }
+
+    .retrato{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+    .retrato img{
+        margin: 0px;
+    }
+
+    .nuestraInfo article{
+
+        margin-right: 4px;
+        margin-left: 4px;
+
+    }
+
+
+#impres3D{
+    font-size: 0.8rem;
+    
 }
+#impres3D h3{
+    font-size: 1rem;
+    height: 38px;
+}
+#disUnic{
+    font-size: 0.8rem;
+}
+#disUnic h3{
+    font-size: 1rem;
+    height: 38px;
+}
+#alcanceCualquiera{
+    font-size: 0.8rem;
+}
+#alcanceCualquiera h3{
+    font-size: 1rem;
+    height: 38px;
+}
+
+.infoConsulta {
+    margin: 0px;
+    text-align: center;
+   
+}
+
+}
+
