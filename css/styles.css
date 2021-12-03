@@ -15,7 +15,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #EEE4F4;
-    margin: 0px;
+    margin-bottom: 70px;
 }
 
 /*Color de los links*/
@@ -31,6 +31,7 @@ a {
     font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
     font-size: 15px;
     display: flex;
+    text-align: left;
     justify-content: space-between;
     background-color: #7251B5;
     position: fixed;
@@ -43,6 +44,10 @@ a {
     justify-content: center;
     align-items: center;
     width: fit-content;
+}
+
+.logoFooter p {
+    margin: 0px;
 }
 
 .logoFooter img {
@@ -71,7 +76,7 @@ a {
 /* Query del footer para celular */
 @media (max-width: 480px) {
     .footer {
-        font-size: 0.8rem;
+        font-size: 7px;
     }
 
     .logoFooter img {
@@ -96,65 +101,47 @@ a {
     width: 100%;
 }
 
-.logoHeader {
-    float: left;
-    margin: 0px;
+.header nav #textoHeader{
+    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
+    color: #240046;
+    /* margin: 10px 0px; */
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #d58dff;
 }
 
-.logoHeader img {
+.header nav {
+    background-color: #7251B5 !important;
+}
+
+.header img {
     width: 100px;
     height: 100px;
     filter: invert(100%);
 }
 
-.textoHeader {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-}
-
-.textoHeader h1 {
-    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
-    color: #240046;
-    margin: 10px 0px;
-    left: 10px;
-    font-size: 40px;
-    text-shadow: 3px 3px 3px #d58dff;
-}
-
-.textoHeader nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0px;
-    padding-bottom: 1rem;
-}
-
-.textoHeader nav ul li {
-    padding: 0px;
-}
-
-.textoHeader nav ul li button {
+.header a {
     font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
+    color: #240046 !important;
     width: auto;
-    cursor: pointer;
-    padding-right: 10px;
-    background-color: #7251B5;
-    border: transparent;
-    font-size: 12px;
+    padding-right: 5px;
+    font-size: 15px;
 }
 
-@media screen and (max-width: 480px) {
-    .logoHeader img {
+/* Query del header */
+@media (max-width: 992px) {
+    .header img {
         width: 75px;
         height: 75px;
     }
-
-    .textoHeader h1 {
-        font-size: 25px;
+    .header {
+        justify-content: left;
     }
+}
 
-    .textoHeader nav ul li button {
-        font-size: 0.8rem;
+@media (max-width: 480px) {
+    
+    .header a {
+        font-size: 10px;
     }
 }
 
@@ -162,14 +149,14 @@ a {
 
 /* PAGINA 'NOSOTOS.HTML' */
 /*Div class de los retratos en "nosotros.html"*/
-.retrato{
+.retrato {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
 }
+
 .retrato img {
-    display: inline-block;
     width: 150px;
     height: 150px;
     margin-left: 50px;
@@ -178,34 +165,42 @@ a {
 /*Div class de la información en "nosotros.html"*/
 .nuestraInfo {
     display: flex;
+    justify-content: center;
 }
 
 /*Div de "sobre nosotros" en pag "nosotros.html"*/
-.sobreNosotros { /*
-    margin: auto;
+.sobreNosotros {
     text-align: center;
-    width: 60%;
-    padding: 10px;
-    margin-bottom: 50px;
-*/
-    /* margin: auto; */
-    text-align: center;
-    /* padding: 10px; */
     padding-bottom: 6rem;
     display: flex;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
 }
 
-#nos{
-    width: auto;
+.sobreNosotros h2 {
+    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
+    color: #240046;
+    text-shadow: 2px 2px 2px #d58dff;
 }
 
+#impres3D {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
 
+#disUnic {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+#alcanceCualquiera {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
 
 .nuestraInfo article {
-    /* padding: 6px; */
     border: solid #7251B5 2px;
     margin-right: 22px;
     margin-left: 22px;
@@ -213,6 +208,10 @@ a {
 }
 
 .nuestraInfo article h3 {
+    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
+    color: #240046;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #d58dff;
     border: solid #7251B5 10px;
     background-color: #7251B5;
     margin: 0px;
@@ -222,12 +221,75 @@ a {
     padding: 10px;
 }
 
+/* Query de la pagina'NOSOTROS.HTML' */
+@media (max-width: 800px) {
+
+    .nuestraInfo {
+        margin-bottom: 6rem;
+        font-size: 12px;
+    }
+
+    .sobreNosotros {
+        padding-left: 2rem;
+        font-size: 12px;
+    }
+
+    .nuestraInfo article h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobreNosotros {
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+
+    .sobreNosotros article h2 {
+        font-size: 25px;
+    }
+
+    .retrato {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .retrato img {
+        margin: 0px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .nuestraInfo article {
+        margin: 0px 5px 0px 5px;
+    }
+
+    .nuestraInfo article h3 {
+        font-size: 10px;
+    }
+
+    #impres3D {
+        width: 30%
+    }
+
+    #disUnic {
+        width: 30%;
+    }
+
+    #alcanceCualquiera {
+        width: 30%;
+    }
+}
+
+
+
 
 
 /* PAGINA 'PERSONAJE.HTML */
 /*Div class del creador de personaje en "personaje.html*/
 .creadorPersonaje {
-    
+
     text-align: center;
     padding-top: 3rem;
 }
@@ -237,22 +299,34 @@ a {
 }
 
 
+
+
+
 /* PAGINA 'PRODUCTO.HTML' */
 /*Div class del formulario de pedido en "producto.html"*/
-.infoConsulta {
+.formulario {
+    font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
+    font-size: 1rem;
     margin: auto;
-    text-align: center;
+    padding-top: 50px;
+    text-align: left;
+    justify-content: center;
     width: 50%;
 }
 
-.form {
-    display: inline-flex;
-    margin-bottom: 20px;
+.formulario input {
+    font-size: 0.7rem;
+}
+.formulario textarea {
+    font-size: 0.7rem;
+}
+.formulario button {
+    background-color: #7251B5;
+    box-shadow: 0 0 8px 3px #d58dff;
 }
 
-.formNombre {
-    margin-right: 10px;
-}
+
+
 
 
 /* PAGINA 'INDEX.HTML' */
@@ -275,28 +349,6 @@ a {
         'A  B  C'
         'D  E  F'
         'G  H  I';
-}
-
-
-#impres3D{
-    display: flex;
-    flex-direction: column;
-}
-#disUnic{
-    display: flex;
-    flex-direction: column;
-}
-#alcanceCualquiera{
-    display: flex;
-    flex-direction: column;
-}
-
-#impres3D h3{
-    font-size: 1rem;
-}
-
-#impres3D p{
-    font-size: 0.8rem;
 }
 
 .imagenesDeTrabajos img:nth-child(1) {
@@ -341,34 +393,6 @@ a {
 }
 
 /* Query para la pagina 'INDEX.HTML' */
-
-@media screen and (max-width: 860px) {
-
-    .nuestraInfo{
-        margin-bottom: 4rem;
-    }
-}
-
-@media (max-width: 580px) {
-    
-.infoConsulta {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-
-.nuestraInfo{
-    margin-bottom: 6rem;
-}
-
-.sobreNosotros{
-    padding-left: 2rem;
-}
-}
-
-
 @media (max-width: 480px) {
 
     .imagenesDeTrabajos {
@@ -383,58 +407,4 @@ a {
     .algunosTrabajos h2 {
         font-size: 1em;
     }
-
-    .sobreNosotros{
-        padding-left: 0.1rem;   
-        padding-right: 0.1rem;
-    }
-
-    .retrato{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    }
-
-    .retrato img{
-        margin: 0px;
-    }
-
-    .nuestraInfo article{
-
-        margin-right: 4px;
-        margin-left: 4px;
-
-    }
-
-
-#impres3D{
-    font-size: 0.8rem;
-    
 }
-#impres3D h3{
-    font-size: 1rem;
-    height: 38px;
-}
-#disUnic{
-    font-size: 0.8rem;
-}
-#disUnic h3{
-    font-size: 1rem;
-    height: 38px;
-}
-#alcanceCualquiera{
-    font-size: 0.8rem;
-}
-#alcanceCualquiera h3{
-    font-size: 1rem;
-    height: 38px;
-}
-
-.infoConsulta {
-    margin: 0px;
-    text-align: center;
-   
-}
-
-}
-

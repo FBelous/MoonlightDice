@@ -10,83 +10,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <!-- css bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+
+    <!-- css propio -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Moonlight Dice</title>
 </head>
 
 <body>
     <!-- Titulo y logo -->
+
     <header class="header">
-
-        <div class="logoHeader">
-            <a href="https://www.youtube.com/watch?v=qW-gf4loc7U" target="blank" id="headerLogo"><img
-                    src="../img/logo_centrado.png" alt="logo"></a>
-        </div>
-
-
-        <!-- Separación del texto con la imagen para que se pueda alinear mejor esteticamente -->
-
-        <div class="textoHeader">
-            <h1>Moonlight Dice</h1>
-
-
-            <!-- Menú principal -->
-            <section>
-                <nav>
-                    <ul id="menuPrincipal">
-                        <li><a href="../index.html"><button style="padding-left: 0px;">Inicio</button></a></li>
-                        <li><a href="./nosotros.html"><button>Sobre nosotros</button></a></li>
-                        <li><a href="./personaje.html"><button>Credor de personaje</button></a></li>
-                        <li><a href="./producto.html"><button>Producto personalizado</button></a></li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="tituloHeader navbar-brand" id="textoHeader" href="../index.html"><img
+                        src="../img/logo_centrado.png" alt="" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./nosotros.html">Sobre nosotros</a>
+                        <a class="nav-link" href="./personaje.html">Creador de personaje</a>
+                        <a class="nav-link" href="./producto.html">Producto personalizado</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <br>
+
 
     <!-- Formulario para hacer un pedido especifico -->
     <section>
-        <div class="infoConsulta">
-            <h2> Pedí tu set personalizado: </h2>
-            <form action="/" method="post">
-                <fieldset>
-                    <legend>Formulario</legend>
-
-                    <div class="form">
-                        <div class="formNombre">
-                            <label for="nombre">Nombre:</label><br>
-                            <input id="nombre" type="text" placeholder="">
-                        </div>
-
-                        <div class="formEmail">
-                            <label for="email">Email:</label><br>
-                            <input id="email" type="email" placeholder="" required>
-                        </div>
-                    </div><br>
-
-                    <label for="ideaProducto">Explicanos tu idea:</label><br>
-                    <textarea name="ideaProducto" id="ideaProducto" cols="50" rows="10"
-                        placeholder="Contanos como es el alma de tus dados, que los define, tu personaje? Un lugar? Tu perro? Las canciones de Chayanne?"></textarea>
+        <div class="formulario">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputName3">Nombre</label>
+                    <input type="text" class="form-control" id="inputName3" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3">Email</label>
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Contanos la idea de tus dados!"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">Si quiere, ingrese una imagen de referencia para los
+                        dados</label>
                     <br>
-                    <br>
-
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset">
-                </fieldset>
+                    <input type="file" id="exampleInputFile">
+                </div>
+                <div class="form-group">
+                    <div>
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
-    </form>
-    <br>
 
 
     <!-- Footer -->
-
+    <br>
     <footer>
         <div class="footer">
             <div class="logoFooter">
@@ -100,6 +95,11 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
