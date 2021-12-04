@@ -12,9 +12,16 @@
 
 /*Generales del HTML*/
 /*Body, mas que nada el cambio de font*/
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: #EEE4F4;
+    background-image: rgb(238, 228, 244);
+    background-image: linear-gradient(180deg, rgba(238, 228, 244, 1) 61%, rgba(114, 81, 181, 1) 100%, rgba(114, 81, 181, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin-bottom: 70px;
 }
 
@@ -101,7 +108,7 @@ a {
     width: 100%;
 }
 
-.header nav #textoHeader{
+.header nav #textoHeader {
     font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
     color: #240046;
     /* margin: 10px 0px; */
@@ -133,13 +140,14 @@ a {
         width: 75px;
         height: 75px;
     }
+
     .header {
         justify-content: left;
     }
 }
 
 @media (max-width: 480px) {
-    
+
     .header a {
         font-size: 10px;
     }
@@ -187,17 +195,26 @@ a {
     flex-direction: column;
     width: 25%;
 }
+#impres3D:hover{
+    width: 35%;
+}
 
 #disUnic {
     display: flex;
     flex-direction: column;
     width: 25%;
 }
+#disUnic:hover{
+    width: 35%;
+}
 
 #alcanceCualquiera {
     display: flex;
     flex-direction: column;
     width: 25%;
+}
+#alcanceCualquiera:hover {
+    width: 35%;
 }
 
 .nuestraInfo article {
@@ -272,13 +289,22 @@ a {
     #impres3D {
         width: 30%
     }
+    #impres3D:hover {
+        width: 45%
+    }
 
     #disUnic {
         width: 30%;
     }
+    #disUnic:hover {
+        width: 40%;
+    }
 
     #alcanceCualquiera {
         width: 30%;
+    }
+    #alcanceCualquiera:hover {
+        width: 40%;
     }
 }
 
@@ -317,9 +343,11 @@ a {
 .formulario input {
     font-size: 0.7rem;
 }
+
 .formulario textarea {
     font-size: 0.7rem;
 }
+
 .formulario button {
     background-color: #7251B5;
     box-shadow: 0 0 8px 3px #d58dff;
