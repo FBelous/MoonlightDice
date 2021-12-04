@@ -317,9 +317,16 @@ a {
 }
 
 .creadorPersonaje h2 {
+    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
+    color: #240046;
+    text-shadow: 3px 3px 3px #d58dff;
     font-size: 50px;
 }
-
+@media (max-width: 480px) {
+    .creadorPersonaje h2 {
+        font-size: 20px;
+    }
+}
 
 
 
@@ -338,6 +345,7 @@ a {
 
 .formulario input {
     font-size: 0.7rem;
+    
 }
 
 .formulario textarea {
@@ -360,6 +368,7 @@ a {
     color: #240046;
     text-align: center;
     text-shadow: 3px 3px 1px #d0b7dd;
+    margin-top: 10px;
 }
 
 /*Div class de las imagenes en "index.html"*/
@@ -429,6 +438,6 @@ a {
     }
 
     .algunosTrabajos h2 {
-        font-size: 1em;
+        font-size: 0.8rem;
     }
 }
