@@ -324,7 +324,7 @@ a {
 }
 @media (max-width: 480px) {
     .creadorPersonaje h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
@@ -373,7 +373,7 @@ a {
 
 /*Div class de las imagenes en "index.html"*/
 .imagenesDeTrabajos {
-    margin: 30px 70px 0px 70px;
+    margin: 30px 70px 0 70px;
     margin-bottom: 6rem;
     display: grid;
     grid-gap: 7px;
@@ -429,6 +429,7 @@ a {
 @media (max-width: 480px) {
 
     .imagenesDeTrabajos {
+        margin: 30px 20px 0 20px;
         grid-template-areas:
             "A  B"
             "C  D"
@@ -438,6 +439,6 @@ a {
     }
 
     .algunosTrabajos h2 {
-        font-size: 0.8rem;
+        font-size: 25px;
     }
 }
