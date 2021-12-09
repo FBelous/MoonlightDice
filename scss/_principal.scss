@@ -1,0 +1,62 @@
+/* pagina index*/
+
+.algunosTrabajos h2 {
+    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
+    color: #240046;
+    text-align: center;
+    text-shadow: 3px 3px 1px #d0b7dd;
+    margin-top: 10px;
+}
+
+.imagenesDeTrabajos {
+    margin: 30px 70px 0 70px;
+    margin-bottom: 6rem;
+    display: grid;
+    grid-gap: 7px;
+    justify-items: stretch;
+    grid-template-areas:
+        'A  B  C'
+        'D  E  F'
+        'G  H  I';
+
+    img {
+        width: 100%;
+        height: auto;
+
+        &:nth-child(1) {
+            grid-area: A;
+        }
+
+        &:nth-child(2) {
+            grid-area: B;
+        }
+
+        &:nth-child(3) {
+            grid-area: C;
+        }
+
+        &:nth-child(4) {
+            grid-area: D;
+        }
+
+        &:nth-child(5) {
+            grid-area: E;
+        }
+
+        &:nth-child(6) {
+            grid-area: F;
+        }
+
+        &:nth-child(7) {
+            grid-area: G;
+        }
+
+        &:nth-child(8) {
+            grid-area: H;
+        }
+
+        &:nth-child(9) {
+            grid-area: I;
+        }
+    }
+}

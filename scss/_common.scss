@@ -1,0 +1,25 @@
+/*Agregar una font dentro de la carpeta "fonts"*/
+@font-face {
+    font-family: 'IntegralCF-BoldOblique';
+    src: url(fonts/IntegralCF-BoldOblique.woff);
+}
+
+@font-face {
+    font-family: 'IntegralCF-Oblique';
+    src: url(fonts/IntegralCF-RegularOblique.woff);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: rgb(238, 228, 244);
+    background-image: linear-gradient(180deg, rgba(238, 228, 244, 1) 61%, rgba(114, 81, 181, 1) 100%, rgba(114, 81, 181, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 70px;
+}
+
+a {
+    color: #240046;
+    text-decoration: #240046;
+}
+

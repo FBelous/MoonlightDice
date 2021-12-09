@@ -1,0 +1,28 @@
+/* header */
+
+.header {
+    background-color: #7251B5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+
+    nav {
+        background-color: #7251B5 !important;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        filter: invert(100%);
+    }
+
+    a {
+        font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
+        color: #240046 !important;
+        width: auto;
+        padding-right: 5px;
+        font-size: 17px;
+        text-shadow: 2px 2px 2px #d58dff;
+    }
+}

@@ -1,0 +1,86 @@
+/* nosotros */
+
+.retrato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+
+    img {
+        width: 150px;
+        height: 150px;
+        margin-left: 50px;
+    }
+}
+
+.nuestraInfo {
+    display: flex;
+    justify-content: center;
+
+    article {
+        border: solid #7251B5 2px;
+        margin-right: 22px;
+        margin-left: 22px;
+        text-align: center;
+
+        h3 {
+            font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
+            color: #240046;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px #d58dff;
+            border: solid #7251B5 10px;
+            background-color: #7251B5;
+            margin: 0px;
+        }
+
+        p {
+            padding: 10px;
+        }
+    }
+}
+
+.sobreNosotros {
+    text-align: center;
+    padding-bottom: 6rem;
+    display: flex;
+    padding: 2rem 4rem 2rem 4rem;
+
+    h2 {
+        font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
+        color: #240046;
+        text-shadow: 2px 2px 2px #d58dff;
+    }
+}
+
+#impres3D {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    transition: all 200ms;
+
+    &:hover {
+        width: 35%;
+    }
+}
+
+#disUnic {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    transition: all 200ms;
+
+    &:hover {
+        width: 35%;
+    }
+}
+
+#alcanceCualquiera {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    transition: all 200ms;
+
+    &:hover {
+        width: 35%;
+    }
+}

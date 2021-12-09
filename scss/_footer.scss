@@ -1,0 +1,51 @@
+/* footer */
+
+.footer {
+    font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
+    font-size: 15px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    background-color: #7251B5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+    p {
+        margin: 0px;
+    }
+
+    img {
+        float: left;
+        width: 60px;
+        height: 60px;
+        filter: invert(100%);
+    }
+
+}
+
+.contactoFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 35px;
+        height: 35px;
+        &:last-child {
+            filter: invert(100%);
+        }
+    }
+
+    p {
+        margin: 0px;
+        width: 45%;
+    }
+}

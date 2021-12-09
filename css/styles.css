@@ -77,7 +77,7 @@ a {
 }
 
 /* Query del footer para celular */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .footer {
         font-size: 7px;
     }
@@ -104,14 +104,6 @@ a {
     width: 100%;
 }
 
-.header nav #textoHeader {
-    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
-    color: #240046;
-    /* margin: 10px 0px; */
-    font-size: 30px;
-    text-shadow: 3px 3px 3px #d58dff;
-}
-
 .header nav {
     background-color: #7251B5 !important;
 }
@@ -127,7 +119,8 @@ a {
     color: #240046 !important;
     width: auto;
     padding-right: 5px;
-    font-size: 15px;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px #d58dff;
 }
 
 /* Query del header */
@@ -142,7 +135,7 @@ a {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
 
     .header a {
         font-size: 10px;
@@ -190,6 +183,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 25%;
+    transition: all 200ms;
 }
 #impres3D:hover{
     width: 35%;
@@ -199,6 +193,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 25%;
+    transition: all 200ms;
 }
 #disUnic:hover{
     width: 35%;
@@ -208,6 +203,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 25%;
+    transition: all 200ms;
 }
 #alcanceCualquiera:hover {
     width: 35%;
@@ -252,7 +248,7 @@ a {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .sobreNosotros {
         padding-left: 0.1rem;
         padding-right: 0.1rem;
@@ -322,7 +318,7 @@ a {
     text-shadow: 3px 3px 3px #d58dff;
     font-size: 50px;
 }
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .creadorPersonaje h2 {
         font-size: 25px;
     }
@@ -426,7 +422,7 @@ a {
 }
 
 /* Query para la pagina 'INDEX.HTML' */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
 
     .imagenesDeTrabajos {
         margin: 30px 20px 0 20px;
