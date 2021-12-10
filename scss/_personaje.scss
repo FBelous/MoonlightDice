@@ -4,8 +4,8 @@
 
     h2 {
         font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
-        color: #240046;
-        text-shadow: 3px 3px 3px #d58dff;
+        color: $colorPrimarioTexto;
+        text-shadow: 3px 3px 3px $colorSombraTexto;
         font-size: 50px;
     }
 }

@@ -19,10 +19,10 @@
 
     a {
         font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
-        color: #240046 !important;
+        color: $colorPrimarioTexto !important;
         width: auto;
         padding-right: 5px;
         font-size: 17px;
-        text-shadow: 2px 2px 2px #d58dff;
+        text-shadow: 2px 2px 2px $colorSombraTexto;
     }
 }

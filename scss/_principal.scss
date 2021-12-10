@@ -2,9 +2,9 @@
 
 .algunosTrabajos h2 {
     font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
-    color: #240046;
+    color: $colorPrimarioTexto;
     text-align: center;
-    text-shadow: 3px 3px 1px #d58dff;
+    text-shadow: 3px 3px 1px $colorSombraTexto;
     margin-top: 10px;
 }
 
