@@ -22,6 +22,15 @@
     img {
         width: 100%;
         height: auto;
+        transition: transform 250ms;
+
+        &:active {
+            //no estoy seguro que es lo que hace esto, preguntar por '-ms-' y '-webkit-'
+
+            // -ms-transform: scale(1.2, 1.2);
+            // -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+        }
 
         &:nth-child(1) {
             grid-area: A;
