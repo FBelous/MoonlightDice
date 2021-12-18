@@ -3,8 +3,7 @@
 @media (max-width: 992px) {
     /* header */
     .header img {
-        width: 75px;
-        height: 75px;
+        @include size(75px, 75px);
     }
 
     .header {
@@ -74,8 +73,7 @@
         
         img {
             margin: 0px;
-            height: 120px;
-            width: 120px;
+            @include size(120px, 120px);
         }
     }
 
@@ -124,12 +122,10 @@
     }
 
     .logoFooter img {
-        width: 40px;
-        height: 40px;
+        @include size(40px, 40px);
     }
 
     .contactoFooter img {
-        width: 25px;
-        height: 25px;
+        @include size(25px, 25px);
     }
 }

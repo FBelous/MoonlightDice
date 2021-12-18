@@ -9,7 +9,7 @@
 }
 
 .imagenesDeTrabajos {
-    margin: 30px 70px 0 70px;
+    margin: $margenImagenes;
     margin-bottom: 6rem;
     display: grid;
     grid-gap: 7px;
@@ -20,13 +20,12 @@
         'G  H  I';
 
     img {
-        width: 100%;
-        height: auto;
+        @include size(100%, auto);
         transition: transform 250ms;
 
         &:active {
             //no estoy seguro que es lo que hace esto, preguntar por '-ms-' y '-webkit-'
-            
+
             // -ms-transform: scale(1.2, 1.2);
             // -webkit-transform: scale(1.2, 1.2);
             transform: scale(1.2, 1.2);

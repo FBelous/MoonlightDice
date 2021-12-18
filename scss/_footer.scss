@@ -24,8 +24,7 @@
 
     img {
         float: left;
-        width: 60px;
-        height: 60px;
+        @include size(60px, 60px);
         filter: invert(100%);
     }
 
@@ -37,8 +36,7 @@
     align-items: center;
 
     img {
-        width: 35px;
-        height: 35px;
+        @include size(35px, 35px);
         &:last-child {
             filter: invert(100%);
         }

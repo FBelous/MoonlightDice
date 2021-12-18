@@ -55,8 +55,8 @@ a {
   justify-items: center;
   grid-template-areas: 'A  B  C' 'D  E  F' 'G  H  I'; }
   .imagenesDeTrabajos img {
-    width: 100%;
     height: auto;
+    width: 100%;
     transition: transform 250ms; }
     .imagenesDeTrabajos img:active {
       transform: scale(1.2, 1.2); }
@@ -86,8 +86,8 @@ a {
   justify-content: center;
   padding-top: 2rem; }
   .retrato img {
-    width: 150px;
     height: 150px;
+    width: 150px;
     margin-left: 50px; }
 
 .nuestraInfo {
@@ -190,8 +190,8 @@ a {
     margin: 0px; }
   .logoFooter img {
     float: left;
-    width: 60px;
     height: 60px;
+    width: 60px;
     filter: invert(100%); }
 
 .contactoFooter {
@@ -199,8 +199,8 @@ a {
   justify-content: space-around;
   align-items: center; }
   .contactoFooter img {
-    width: 35px;
-    height: 35px; }
+    height: 35px;
+    width: 35px; }
     .contactoFooter img:last-child {
       filter: invert(100%); }
   .contactoFooter p {
@@ -211,8 +211,8 @@ a {
 @media (max-width: 992px) {
   /* header */
   .header img {
-    width: 75px;
-    height: 75px; }
+    height: 75px;
+    width: 75px; }
   .header {
     justify-content: left; }
   /* nosotros */
@@ -274,8 +274,8 @@ a {
   .footer {
     font-size: 10px; }
   .logoFooter img {
-    width: 40px;
-    height: 40px; }
+    height: 40px;
+    width: 40px; }
   .contactoFooter img {
-    width: 25px;
-    height: 25px; } }
+    height: 25px;
+    width: 25px; } }

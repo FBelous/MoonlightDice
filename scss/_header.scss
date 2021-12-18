@@ -1,9 +1,9 @@
 /* header */
 
 .header {
-    background-color: #7251B5;
-    display: flex;
-    justify-content: center;
+    background-color: map-get($estilo, color);
+    display: map-get($estilo, display);
+    justify-content: map-get($estilo, contenido);
     height: auto;
     width: 100%;
 

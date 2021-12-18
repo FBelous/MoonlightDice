@@ -7,8 +7,7 @@
     padding-top: 2rem;
 
     img {
-        width: 150px;
-        height: 150px;
+        @include size(150px, 150px);
         margin-left: 50px;
     }
 }
@@ -25,9 +24,9 @@
 
         h3 {
             font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
-            color: #240046;
+            color: $colorPrimarioTexto;
             font-size: 20px;
-            text-shadow: 2px 2px 2px #d58dff;
+            text-shadow: 2px 2px 2px $colorSombraTexto;
             border: solid #7251B5 10px;
             background-color: #7251B5;
             margin: 0px;
