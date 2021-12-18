@@ -13,7 +13,7 @@
     margin-bottom: 6rem;
     display: grid;
     grid-gap: 7px;
-    justify-items: stretch;
+    justify-items: center;
     grid-template-areas:
         'A  B  C'
         'D  E  F'
@@ -26,7 +26,7 @@
 
         &:active {
             //no estoy seguro que es lo que hace esto, preguntar por '-ms-' y '-webkit-'
-
+            
             // -ms-transform: scale(1.2, 1.2);
             // -webkit-transform: scale(1.2, 1.2);
             transform: scale(1.2, 1.2);
