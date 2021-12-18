@@ -28,8 +28,8 @@ a {
   .header nav {
     background-color: #7251B5 !important; }
   .header img {
-    width: 100px;
     height: 100px;
+    width: 100px;
     filter: invert(100%); }
   .header a {
     font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
@@ -119,28 +119,12 @@ a {
     color: #240046;
     text-shadow: 2px 2px 2px #d58dff; }
 
-#impres3D {
+#impres3D, #disUnic, #alcanceCualquiera {
   display: flex;
   flex-direction: column;
   width: 25%;
   transition: all 200ms; }
-  #impres3D:hover {
-    width: 35%; }
-
-#disUnic {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  transition: all 200ms; }
-  #disUnic:hover {
-    width: 35%; }
-
-#alcanceCualquiera {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  transition: all 200ms; }
-  #alcanceCualquiera:hover {
+  #impres3D:hover, #disUnic:hover, #alcanceCualquiera:hover {
     width: 35%; }
 
 .creadorPersonaje {
@@ -255,9 +239,9 @@ a {
     margin: 0px 5px 0px 5px; }
     .nuestraInfo article h3 {
       font-size: 10px; }
-  #impres3D {
+  #impres3D, #disUnic, #alcanceCualquiera {
     width: 30%; }
-    #impres3D:hover {
+    #impres3D:hover, #disUnic:hover, #alcanceCualquiera:hover {
       width: 45%; }
   #disUnic {
     width: 30%; }

@@ -63,23 +63,9 @@
 }
 
 #disUnic {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    transition: all 200ms;
-
-    &:hover {
-        width: 35%;
-    }
+    @extend #impres3D;
 }
 
 #alcanceCualquiera {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    transition: all 200ms;
-
-    &:hover {
-        width: 35%;
-    }
+    @extend #impres3D;
 }
