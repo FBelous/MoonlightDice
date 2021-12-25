@@ -127,15 +127,6 @@ a {
   #impres3D:hover, #disUnic:hover, #alcanceCualquiera:hover {
     width: 35%; }
 
-.creadorPersonaje {
-  text-align: center;
-  padding-top: 3rem; }
-  .creadorPersonaje h2 {
-    font-family: 'IntegralCF-BoldOblique', 'Roboto', sans-serif;
-    color: #240046;
-    text-shadow: 3px 3px 3px #d58dff;
-    font-size: 50px; }
-
 /* producto */
 .formulario {
   font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
