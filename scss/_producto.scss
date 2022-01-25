@@ -5,11 +5,11 @@
     grid-gap: 10px;
     grid-template-areas:
         'A  A  B'
-        'A  A  B'
-        'A  A  B';
+        'A  A  D'
+        'A  A  C';
 
     img {
-        @include size(100%, auto);
+        @include size(500, 500);
         transition: transform 250ms;
         grid-area: A;
 
@@ -20,11 +20,12 @@
         }
     }
 
-    .nombredado {
+    .infodado {
         grid-area: B;
         padding-left: 1em;
 
-        h2, h4 {
+        h2,
+        h4 {
             color: black;
             text-shadow: 3px 3px 1px $colorSombraTexto;
 
@@ -32,24 +33,26 @@
                 padding-bottom: 1.5em;
             }
         }
-
-        button {
-            color: rgb(237, 193, 255);
-            text-shadow: 1px 1px 1px $colorSombraTexto;
-            font-weight: bold;
-            background-color: #7251B5;
-            box-shadow: 0 0 8px 3px #d58dff;
-            padding: 5px 70px;
-        }
-        
-        p {
-            font-weight: lighter;
-            text-shadow: 1px 1px 1px #e5b7ff;
-            font-size: 15px;
-            padding-top: 8em;
-            margin-right: 3.5em;
-        }
     }
 
+    button {
+        grid-area: D;
+        color: rgb(237, 193, 255);
+        height: 40px;
+        width: 370px;
+        text-shadow: 1px 1px 1px $colorSombraTexto;
+        font-weight: bold;
+        background-color: #7251B5;
+        box-shadow: 0 0 8px 3px #d58dff;
+    }
+
+    p {
+        grid-area: C;
+        font-weight: lighter;
+        text-shadow: 1px 1px 1px #e5b7ff;
+        font-size: 15px;
+        padding-top: 7em;
+        margin-right: 3.5em;
+    }
 
 }
