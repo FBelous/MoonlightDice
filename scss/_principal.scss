@@ -5,14 +5,14 @@
     color: $colorPrimarioTexto;
     text-align: center;
     text-shadow: 3px 3px 1px $colorSombraTexto;
-    margin-top: 10px;
+    margin-top: 0.5em;
 }
 
 .imagenesDeTrabajos {
-    margin: 30px 250px 0 250px;
+    margin: 30px 10% 0 10%;
     margin-bottom: 6rem;
     display: grid;
-    grid-gap: 3em;
+    grid-gap: 1em;
     justify-items: center;
     grid-template-areas:
         'A  B  C'
@@ -20,12 +20,7 @@
         'G  H  I';
 
     a {
-        width: 100%
-    }
-
-    img {
-        @include size(100%, auto);
-        transition: transform 250ms;
+        width: 100%;
 
         &:nth-child(1) {
             grid-area: A;
@@ -62,11 +57,16 @@
         &:nth-child(9) {
             grid-area: I;
         }
+    }
+
+    img {
+        @include size(100%, auto);
+        transition: transform 250ms;
 
         &:hover {
-            -ms-transform: scale(1.2, 1.2);
-            -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
+            -ms-transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
         }
     }
 }

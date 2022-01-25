@@ -1,5 +1,23 @@
 /* mediaquerys */
 
+/* @media (max-width: 1500px) {
+    .imagenesDeTrabajos {
+        margin: 30px 200px 0px 200px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .imagenesDeTrabajos {
+        margin: 30px 200px 0px 200px;
+    }
+} */
+
+
+@media (min-width: 992px) {
+    
+}
+
+
 @media (max-width: 992px) {
     /* header */
     .header img {
@@ -10,8 +28,18 @@
         justify-content: left;
     }
 
+    /* index */
+    .imagenesDeTrabajos {
+        margin: 30px 20px 0 20px;
+        grid-template-areas:
+            "A  B"
+            "C  D"
+            "E  F"
+            "G  H"
+            "I  I";
+    }
+
     /* nosotros */
-    // lo de abajo quizá debería ir en un mediaquery de 800px, quizá cambiar.
     .nuestraInfo {
         margin-bottom: 6rem;
         font-size: 12px;

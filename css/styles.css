@@ -7,6 +7,10 @@
   font-family: 'IntegralCF-Oblique';
   src: url(fonts/IntegralCF-RegularOblique.woff); }
 
+@font-face {
+  font-family: 'Regular';
+  src: url(fonts/IntegralCF-Regular.woff); }
+
 body {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(180deg, #eee4f4 61%, #7251b5 100%, #7251b5 100%);
@@ -16,6 +20,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif; }
+
+p {
+  font-family: 'Regular'; }
 
 a {
   color: #240046;
@@ -48,43 +55,43 @@ a {
   color: #240046;
   text-align: center;
   text-shadow: 3px 3px 1px #d58dff;
-  margin-top: 10px; }
+  margin-top: 0.5em; }
 
 .imagenesDeTrabajos {
-  margin: 30px 250px 0 250px;
+  margin: 30px 10% 0 10%;
   margin-bottom: 6rem;
   display: grid;
-  grid-gap: 3em;
+  grid-gap: 1em;
   justify-items: center;
   grid-template-areas: 'A  B  C' 'D  E  F' 'G  H  I'; }
   .imagenesDeTrabajos a {
     width: 100%; }
+    .imagenesDeTrabajos a:nth-child(1) {
+      grid-area: A; }
+    .imagenesDeTrabajos a:nth-child(2) {
+      grid-area: B; }
+    .imagenesDeTrabajos a:nth-child(3) {
+      grid-area: C; }
+    .imagenesDeTrabajos a:nth-child(4) {
+      grid-area: D; }
+    .imagenesDeTrabajos a:nth-child(5) {
+      grid-area: E; }
+    .imagenesDeTrabajos a:nth-child(6) {
+      grid-area: F; }
+    .imagenesDeTrabajos a:nth-child(7) {
+      grid-area: G; }
+    .imagenesDeTrabajos a:nth-child(8) {
+      grid-area: H; }
+    .imagenesDeTrabajos a:nth-child(9) {
+      grid-area: I; }
   .imagenesDeTrabajos img {
     height: auto;
     width: 100%;
     transition: transform 250ms; }
-    .imagenesDeTrabajos img:nth-child(1) {
-      grid-area: A; }
-    .imagenesDeTrabajos img:nth-child(2) {
-      grid-area: B; }
-    .imagenesDeTrabajos img:nth-child(3) {
-      grid-area: C; }
-    .imagenesDeTrabajos img:nth-child(4) {
-      grid-area: D; }
-    .imagenesDeTrabajos img:nth-child(5) {
-      grid-area: E; }
-    .imagenesDeTrabajos img:nth-child(6) {
-      grid-area: F; }
-    .imagenesDeTrabajos img:nth-child(7) {
-      grid-area: G; }
-    .imagenesDeTrabajos img:nth-child(8) {
-      grid-area: H; }
-    .imagenesDeTrabajos img:nth-child(9) {
-      grid-area: I; }
     .imagenesDeTrabajos img:hover {
-      -ms-transform: scale(1.2, 1.2);
-      -webkit-transform: scale(1.2, 1.2);
-      transform: scale(1.2, 1.2); }
+      -ms-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
 
 /* nosotros */
 .retrato {
@@ -156,7 +163,7 @@ a {
   justify-content: center;
   display: grid;
   grid-gap: 10px;
-  grid-template-areas: 'A  A  B' 'A  A  B' 'A  A  C'; }
+  grid-template-areas: 'A  A  B' 'A  A  B' 'A  A  B'; }
   .producto img {
     height: auto;
     width: 100%;
@@ -173,10 +180,20 @@ a {
       color: black;
       text-shadow: 3px 3px 1px #d58dff; }
       .producto .nombredado h2:nth-child(2), .producto .nombredado h4:nth-child(2) {
-        padding-bottom: 1em; }
-  .producto p {
-    padding-left: 1em;
-    grid-area: C; }
+        padding-bottom: 1.5em; }
+    .producto .nombredado button {
+      color: #edc1ff;
+      text-shadow: 1px 1px 1px #d58dff;
+      font-weight: bold;
+      background-color: #7251B5;
+      box-shadow: 0 0 8px 3px #d58dff;
+      padding: 5px 70px; }
+    .producto .nombredado p {
+      font-weight: lighter;
+      text-shadow: 1px 1px 1px #e5b7ff;
+      font-size: 15px;
+      padding-top: 5em;
+      margin-right: 3.5em; }
 
 /* footer */
 .footer {
@@ -217,6 +234,17 @@ a {
     width: 40%; }
 
 /* mediaquerys */
+/* @media (max-width: 1500px) {
+    .imagenesDeTrabajos {
+        margin: 30px 200px 0px 200px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .imagenesDeTrabajos {
+        margin: 30px 200px 0px 200px;
+    }
+} */
 @media (max-width: 992px) {
   /* header */
   .header img {
@@ -224,6 +252,10 @@ a {
     width: 75px; }
   .header {
     justify-content: left; }
+  /* index */
+  .imagenesDeTrabajos {
+    margin: 30px 20px 0 20px;
+    grid-template-areas: "A  B" "C  D" "E  F" "G  H" "I  I"; }
   /* nosotros */
   .nuestraInfo {
     margin-bottom: 6rem;

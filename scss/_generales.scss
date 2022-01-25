@@ -9,6 +9,11 @@
     src: url(fonts/IntegralCF-RegularOblique.woff);
 }
 
+@font-face {
+    font-family: 'Regular';
+    src: url(fonts/IntegralCF-Regular.woff);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(180deg, rgba(238, 228, 244, 1) 61%, rgba(114, 81, 181, 1) 100%, rgba(114, 81, 181, 1) 100%);
@@ -19,6 +24,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Regular';
 }
 
 a {
