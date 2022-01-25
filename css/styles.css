@@ -14,6 +14,9 @@ body {
   background-attachment: fixed;
   margin-bottom: 70px; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif; }
+
 a {
   color: #240046;
   text-decoration: #240046; }
@@ -51,15 +54,13 @@ a {
   margin: 30px 70px 0 70px;
   margin-bottom: 6rem;
   display: grid;
-  grid-gap: 7px;
+  grid-gap: 10px;
   justify-items: center;
   grid-template-areas: 'A  B  C' 'D  E  F' 'G  H  I'; }
   .imagenesDeTrabajos img {
     height: auto;
     width: 100%;
     transition: transform 250ms; }
-    .imagenesDeTrabajos img:active {
-      transform: scale(1.2, 1.2); }
     .imagenesDeTrabajos img:nth-child(1) {
       grid-area: A; }
     .imagenesDeTrabajos img:nth-child(2) {
@@ -78,6 +79,10 @@ a {
       grid-area: H; }
     .imagenesDeTrabajos img:nth-child(9) {
       grid-area: I; }
+    .imagenesDeTrabajos img:hover {
+      -ms-transform: scale(1.2, 1.2);
+      -webkit-transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2); }
 
 /* nosotros */
 .retrato {
@@ -123,7 +128,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 25%;
-  transition: all 200ms; }
+  transition: all 250ms; }
   #impres3D:hover, #disUnic:hover, #alcanceCualquiera:hover {
     width: 35%; }
 
@@ -143,6 +148,26 @@ a {
   .formulario button {
     background-color: #7251B5;
     box-shadow: 0 0 8px 3px #d58dff; }
+
+.producto {
+  margin: 30px 70px 0 70px;
+  justify-content: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 'A  B  B' 'A  B  B' 'A  B  B'; }
+  .producto img {
+    height: auto;
+    width: 100%;
+    transition: transform 250ms;
+    grid-area: A; }
+    .producto img:hover {
+      -ms-transform: scale(1.2, 1.2);
+      -webkit-transform: scale(1.2, 1.2);
+      transform: scale(1.2, 1.2); }
+  .producto .resumen {
+    grid-area: B; }
+    .producto .resumen p {
+      margin-top: 2.5rem; }
 
 /* footer */
 .footer {

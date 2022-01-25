@@ -1,24 +1,30 @@
-/* producto */
-
-.formulario {
-    font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;
-    font-size: 1rem;
-    margin: auto;
-    padding-top: 50px;
-    text-align: left;
+.producto {
+    margin: $margenImagenes;
     justify-content: center;
-    width: 50%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        'A  B  B'
+        'A  B  B'
+        'A  B  B';
 
-    input {
-        font-size: 0.7rem;
+    img {
+        @include size(100%, auto);
+        transition: transform 250ms;
+        grid-area: A;
+
+        &:hover {
+            -ms-transform: scale(1.2, 1.2);
+            -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+        }
     }
 
-    textarea {
-        font-size: 0.7rem;
-    }
-
-    button {
-        background-color: #7251B5;
-        box-shadow: 0 0 8px 3px #d58dff;
+    .resumen {
+        grid-area: B;
+        
+        p {
+            margin-top: 2.5rem;
+        }
     }
 }

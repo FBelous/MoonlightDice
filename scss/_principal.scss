@@ -12,7 +12,7 @@
     margin: $margenImagenes;
     margin-bottom: 6rem;
     display: grid;
-    grid-gap: 7px;
+    grid-gap: 10px;
     justify-items: center;
     grid-template-areas:
         'A  B  C'
@@ -22,14 +22,6 @@
     img {
         @include size(100%, auto);
         transition: transform 250ms;
-
-        &:active {
-            //no estoy seguro que es lo que hace esto, preguntar por '-ms-' y '-webkit-'
-
-            // -ms-transform: scale(1.2, 1.2);
-            // -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-        }
 
         &:nth-child(1) {
             grid-area: A;
@@ -65,6 +57,12 @@
 
         &:nth-child(9) {
             grid-area: I;
+        }
+
+        &:hover {
+            -ms-transform: scale(1.2, 1.2);
+            -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
         }
     }
 }
