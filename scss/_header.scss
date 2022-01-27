@@ -2,19 +2,32 @@
 
 .header {
     background-color: map-get($estilo, color);
-    display: map-get($estilo, display);
+    display: map-get($estilo, pantalla);
     justify-content: map-get($estilo, contenido);
+    align-content: map-get($estilo, contenido);
     height: auto;
     width: 100%;
 
     nav {
+        display: grid;
+        grid-template-areas: "B  A";
         background-color: #7251B5 !important;
+        width: 100%;
     }
 
-    img {
-        @include size(100px, 100px);
-        filter: invert(100%);
+    .opcionesHeader {
+        grid-area: A;
     }
+
+    .imagenHeader {
+        grid-area: B;
+
+        img {
+            @include size(100px, 100px);
+            filter: invert(100%);
+        }
+    }
+
 
     a {
         font-family: 'IntegralCF-Oblique', 'Roboto', sans-serif;

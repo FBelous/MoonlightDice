@@ -2,7 +2,7 @@ $colorPrimarioTexto: #240046;
 $colorSombraTexto: #d58dff;
 
 $margenImagenes:(30px 70px 0 70px);
-$estilo:(color:#7251B5, display:flex, contenido:center);
+$estilo:(color:#7251B5, pantalla:flex, contenido:center);
 
 @mixin size($width, $height) {
     height: $height;
